@@ -3,7 +3,7 @@ steps:
     env:
       BUILDKITE_CLEAN_CHECKOUT: true
     plugins:
-      - docker#v5.8.0:
+      - docker#v5.9.0:
           image: alpine/git
           mount-ssh-agent: true
           mount-buildkite-agent: true
