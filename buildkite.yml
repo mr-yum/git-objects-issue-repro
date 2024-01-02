@@ -10,6 +10,6 @@ steps:
           mount-checkout: false
           workdir: /workdir/example-contract
           command:
-            - fetch origin ${BUILDKITE_BRANCH}:${BUILDKITE_BRANCH} --tags --force
+            - git fetch origin ${BUILDKITE_BRANCH}:${BUILDKITE_BRANCH} --tags --force
           volumes:
             - .:/workdir
