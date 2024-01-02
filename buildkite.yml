@@ -12,7 +12,7 @@ steps:
           command:
             - fetch
             - origin 
-            - ${BUILDKITE_BRANCH}:${BUILDKITE_BRANCH}
+            - ${BUILDKITE_BRANCH}
             - --tags
             - --force
           volumes:
