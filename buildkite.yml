@@ -13,5 +13,6 @@ steps:
           mount-checkout: false
           workdir: /workdir/example-contract
           entrypoint: ""
+          shell: ["/bin/sh", "-e", "-c"]
           volumes:
             - .:/workdir
