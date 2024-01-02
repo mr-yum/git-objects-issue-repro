@@ -2,6 +2,9 @@ steps:
   - label: ':git: fetch'
     env:
       BUILDKITE_CLEAN_CHECKOUT: true
+    command:
+      - cd ..
+      - git fetch origin ${BUILDKITE_BRANCH} --tags --force
     plugins:
       - docker#v5.8.0:
           image: alpine/git
@@ -9,11 +12,6 @@ steps:
           mount-buildkite-agent: true
           mount-checkout: false
           workdir: /workdir/example-contract
-          command:
-            - fetch
-            - origin 
-            - ${BUILDKITE_BRANCH}
-            - --tags
-            - --force
+          entrypoint: ""
           volumes:
             - .:/workdir
