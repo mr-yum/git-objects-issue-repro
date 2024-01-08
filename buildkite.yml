@@ -13,7 +13,7 @@ steps:
             - fetch
             - --verbose
             - origin 
-            - ${BUILDKITE_BRANCH}
+            - +refs/heads/main:refs/remotes/origin/main
             - --tags
             - --force
           volumes:
