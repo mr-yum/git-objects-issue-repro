@@ -11,6 +11,7 @@ steps:
           workdir: /workdir/example-contract
           command:
             - fetch
+            - --verbose
             - origin 
             - ${BUILDKITE_BRANCH}
             - --tags
