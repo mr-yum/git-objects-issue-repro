@@ -8,7 +8,7 @@ steps:
           mount-ssh-agent: true
           mount-buildkite-agent: true
           mount-checkout: false
-          workdir: /workdir/subdir
+          # workdir: /workdir/subdir
           command:
             - fetch
             - --verbose
