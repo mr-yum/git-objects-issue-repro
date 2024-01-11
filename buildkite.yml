@@ -7,8 +7,8 @@ steps:
           image: alpine/git
           mount-ssh-agent: true
           mount-buildkite-agent: true
-          mount-checkout: false
-          workdir: /workdir/subdir
+          mount-checkout: true
+          # workdir: /workdir/subdir
           command:
             - fetch
             - --verbose
@@ -17,7 +17,7 @@ steps:
             - --tags
             - --force
           volumes:
-            - .:/workdir
+            # - .:/workdir
             - /var/lib/buildkite-agent/git-mirrors:/var/lib/buildkite-agent/git-mirrors:ro
           environment:
             - BUILDKITE_BRANCH
