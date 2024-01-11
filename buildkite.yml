@@ -7,7 +7,7 @@ steps:
           image: alpine/git
           mount-ssh-agent: true
           mount-buildkite-agent: true
-          mount-checkout: true
+          mount-checkout: false
           # workdir: /workdir/subdir
           command:
             - fetch
