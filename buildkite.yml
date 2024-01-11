@@ -18,6 +18,6 @@ steps:
             - --force
           volumes:
             - .:/workdir
-            - --volume /var/lib/buildkite-agent/git-mirrors/git-github-com-mr-yum-git-objects-issue-repro-git:/var/lib/buildkite-agent/git-mirrors/git-github-com-mr-yum-git-objects-issue-repro-git:ro
+            - --volume /var/lib/buildkite-agent/git-mirrors/git-github-com-mr-yum-git-objects-issue-repro-git:/var/lib/buildkite-agent/git-mirrors/git-github-com-mr-yum-git-objects-issue-repro-git
           environment:
             - BUILDKITE_BRANCH
